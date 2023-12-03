@@ -122,7 +122,7 @@ runs:
 
     - name: Deploy preview directory
       if: env.action == 'deploy'
-      uses: JamesIves/github-pages-deploy-action@v4
+      uses: JamesIves/github-pages-deploy-action@v4.4.3
       with:
         token: ${{ env.token }}
         repository-name: ${{ env.deployrepo }}
@@ -160,7 +160,7 @@ runs:
 
     - name: Remove preview directory
       if: env.action == 'remove'
-      uses: JamesIves/github-pages-deploy-action@v4
+      uses: JamesIves/github-pages-deploy-action@v4.4.3
       with:
         token: ${{ env.token }}
         repository-name: ${{ env.deployrepo }}
