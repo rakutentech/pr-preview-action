@@ -139,7 +139,7 @@ runs:
 
     - name: Leave a comment after deployment
       if: env.action == 'deploy' && env.deployment_status == 'success'
-      uses: marocchino/sticky-pull-request-comment@v2
+      uses: marocchino/sticky-pull-request-comment@v2.8.0
       with:
         header: pr-preview
         message: "\
